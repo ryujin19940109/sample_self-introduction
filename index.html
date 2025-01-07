@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>石丸隆司の自己紹介</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #2E4053;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .profile-section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #2E4053;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #5D6D7E;
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            color: #34495E;
+            font-weight: bold;
+        }
+
+        .hobby-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .hobby-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 4px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+        }
+
+        .career-timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .career-item {
+            position: relative;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+        }
+
+        .career-item::before {
+            content: "";
+            position: absolute;
+            left: -2rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: #5D6D7E;
+            border-radius: 50%;
+        }
+
+        .career-item::after {
+            content: "";
+            position: absolute;
+            left: -1.6rem;
+            top: 1rem;
+            width: 2px;
+            height: calc(100% + 0.5rem);
+            background: #e0e0e0;
+        }
+
+        .career-item:last-child::after {
+            display: none;
+        }
+
+        .career-description {
+            margin-top: 0.5rem;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            .hobby-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>石丸隆司</h1>
+            <p>事業責任者 / 元エンジニア</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="profile-section">
+            <h2>私について</h2>
+            <p>はじめまして！石丸隆司です。エンジニアとしてのキャリアをスタートし、現在は<span class="highlight">BAR SAUNA事業の責任者</span>として新規事業の立ち上げと運営に携わっています。</p>
+            <p>技術的なバックグラウンドを活かしながら、事業開発やマネジメントにも力を入れています。新しいことへのチャレンジを常に楽しみながら、事業の成長に貢献していきたいと考えています。</p>
+        </section>
+
+        <section class="profile-section">
+            <h2>趣味</h2>
+            <ul class="hobby-list">
+                <li class="hobby-item">
+                    <h3>旅行</h3>
+                    <p>新しい場所での発見や体験を通じて、視野を広げることが好きです</p>
+                </li>
+                <li class="hobby-item">
+                    <h3>お笑い鑑賞</h3>
+                    <p>ライブやテレビを通じて、様々な芸人さんの笑いの世界を楽しんでいます</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="profile-section">
+            <h2>経歴</h2>
+            <div class="career-timeline">
+                <div class="career-item">
+                    <p><strong>2023年 - 現在</strong></p>
+                    <p>株式会社Surprise</p>
+                    <p class="career-description">BAR SAUNA事業責任者</p>
+                </div>
+                <div class="career-item">
+                    <p><strong>2021年 - 2023年</strong></p>
+                    <p>株式会社aohana</p>
+                    <p class="career-description">フルーツ大福事業の立ち上げに従事</p>
+                </div>
+                <div class="career-item">
+                    <p><strong>2016年 - 2021年</strong></p>
+                    <p>NTT西日本</p>
+                    <p class="career-description">インフラ・サーバエンジニアとして基盤システムの設計・構築を担当</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>強み</h2>
+            <p>・技術とビジネスの両面から事業を捉える視点</p>
+            <p>・新規事業の立ち上げ経験を活かした事業開発力</p>
+            <p>・インフラ、サーバ構築の技術的知見</p>
+            <p>・チームマネジメントとリーダーシップ</p>
+        </section>
+    </main>
+</body>
+</html>
